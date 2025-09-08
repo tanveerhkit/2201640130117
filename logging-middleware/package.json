@@ -1,0 +1,25 @@
+{
+  "name": "@app/logging-middleware",
+  "version": "1.0.0",
+  "description": "Reusable logging middleware/client that posts logs to the evaluation service.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "sideEffects": false,
+  "dependencies": {
+    "cross-fetch": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "rimraf": "^5.0.5"
+  }
+}
+
